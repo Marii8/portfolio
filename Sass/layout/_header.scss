@@ -1,0 +1,42 @@
+#bg-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    z-index: -50;
+}
+
+.header-title {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+.main-visual{
+    position: relative;
+}
+
+.video-title {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    color: #ccc;
+}
+
+.header-container {
+    color: #ccc;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+        top: 0;
+        left: 0;
+
+    font-family: 'PT Sans', sans-serif;
+    background: linear-gradient(.25 turn, #333 30%, rgba(#333, 0) 100%);
+}

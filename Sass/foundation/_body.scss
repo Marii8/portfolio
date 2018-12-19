@@ -1,0 +1,21 @@
+@mixin media($width: 768px) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+
+@mixin fontSize($pc, $sp) {
+    font-family: 'PT Sans Narrow','PT Sans Narrow', 'Source Sans Pro', sans-serif;
+    font-size: $pc;
+    @include media {
+        font-size: $sp;
+    }
+}
+
+
+// .text-wrapper {
+//     width: 60%;
+//     margin: 0 auto;
+//     background-color: rgba(#333, .3);
+// }
