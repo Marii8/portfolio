@@ -8,6 +8,7 @@ let mySwiper = new Swiper('.swiper-container', {
 });
 
 
+
 $(function() {
     //get the height of the target element
     let getHeight = $('body').height();
@@ -22,9 +23,14 @@ $(function() {
         $('.top-image2').css({
             backgroundPositionY: bgPosition+"%"
         });
-        $('.top-image3').css({
-            backgroundPositionY: bgPosition+"%"
+        $('.about-prof-text').css({
+            backgroundPositionX: bgPosition+"%"
         });
+        $('.lng-list').css({
+            backgroundPositionX: - bgPosition+"%"
+        });
+
+
 
 
     });

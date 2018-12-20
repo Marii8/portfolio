@@ -1,13 +1,16 @@
 .sb-title {
     height: 70px;
     text-align: center;
+    position: relative;
 
     &:after {
         display: block;
+        position: absolute;
+            bottom: 15px;
         content: "";
-        width: 25px;
+        width: 100%;
         height: 1px;
-        background: #333;
+        background: #888;
     }
 
     &:hover {
@@ -34,9 +37,26 @@
     background: {
         // color: #222;
         image: url(./img/about-bg3.jpg);
-        // repeat: repeat;
-        // attachment: fixed;
-        // position-x: 30%;
+        repeat: repeat;
+        attachment: fixed;
+        position-x: 30%;
     }
 }
 
+.text {
+    width: 600px - (35px * 2);
+    height: 400px;
+    background-color: rgba(#f55, .7);
+    margin-bottom: 35px;
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.text-container {
+    width: 600px;
+    height: 600px;
+    overflow: scroll;
+    padding: 35px;
+    background-color: rgba(#333, .3);
+    border-radius: 15px;
+}
