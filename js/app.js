@@ -15,7 +15,7 @@ $(function() {
     $(window).scroll(function(){
         console.log('背景がちょっと動くやつ')
         let scrollTop = $(document).scrollTop();
-        let bgPosition = 100/getHeight*scrollTop+10;
+        let bgPosition = 80/getHeight*scrollTop+10;
 
         $('.top-image1').css({
             backgroundPositionY: bgPosition+"%"
@@ -29,10 +29,9 @@ $(function() {
         $('.lng-list').css({
             backgroundPositionX: - bgPosition+"%"
         });
-
-
-
-
+        $('.portfolio-bg').css({
+            backgroundPositionX: bgPosition+"%"
+        });
     });
 });
 
