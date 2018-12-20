@@ -1,0 +1,40 @@
+.lng-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    li {
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .la-name {
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 15px 0;
+        }
+    }
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #e34c26;
+}
+
+.fa-wordpress {
+    color: #21759b;
+}
+.fa-js {
+    color: #f7df1e;
+}
+.fa-php {
+    color: #4f5b93
+}
+
+.fa-sass {
+    color: #C04E88FF;
+}
+

@@ -1,0 +1,75 @@
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+ 
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+ 
+.sa--lr {
+  transform: translate(-100px, 0);
+}
+ 
+.sa--rl {
+  transform: translate(100px, 0);
+}
+ 
+.sa--up {
+  transform: translate(0, 100px);
+}
+ 
+.sa--down {
+  transform: translate(0, -100px);
+}
+ 
+.sa--scaleUp {
+  transform: scale(.5);
+}
+ 
+.sa--scaleDown {
+  transform: scale(1.5);
+}
+ 
+.sa--rotateL {
+  transform: rotate(180deg);
+}
+ 
+.sa--rotateR {
+  transform: rotate(-180deg);
+}
+
+
+.contents {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    bottom: -70px;
+    margin: auto;
+    width: 0;
+    height: 5px;
+    background: #EC4E20;
+}
+
+.no1>.line {
+  left: 0;
+}
+
+.no2>.line {
+  right: 0;
+}
+
+.no3>.line {
+  left: 0;
+  right: 0;
+}
+
+
+
