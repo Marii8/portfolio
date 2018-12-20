@@ -19,3 +19,12 @@
 //     margin: 0 auto;
 //     background-color: rgba(#333, .3);
 // }
+
+    .title {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #888;
+    }

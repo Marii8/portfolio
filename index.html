@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Final Project</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
         <div class="main-visual">
             <div class="wrap">
-                <video muted src="css/img/samplevisual.mp4" poster=""  loop id="bg-video"></video>
-                <img src="css/img/" alt="">
+<!--                 <video muted src="css/img/samplevisual.mp4" poster=""  loop id="bg-video"></video> -->
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide"><div class="top-image1"></div></div>
+                        <div class="swiper-slide"><div class="top-image2"></div></div>
+                        <div class="swiper-slide"><div class="top-image3"></div></div> -->
+                        <div class="swiper-slide">1</div>
+                        <div class="swiper-slide top-image2">2</div>
+                        <div class="swiper-slide top-image3">3</div>
+                    </div>
+                </div>
+
+
                 <div class="video-title"><p>Mari's Portfolio Site</p></div>
             </div>
             <aside class="header-container">
                 <a href="#"><img src="css/img/logo1.png" alt="aburai-logo" width='200px' class="header-logo"></a>
                 <ul class="header-list">
-                    <li class="about">ABOUT</li>
-                    <li class="skills">SKILLS</li>
-                    <li class="works">WORKS</li>
-                    <li class="portfolio">PORTFOLIO</li>
-                    <li class="contact">CONTACT</li>
+                    <li class="about"><a href="#about"></a>ABOUT</li>
+                    <li class="skills"><a href="#skills"></a>SKILLS</li>
+                    <li class="works"><a href="#works"></a>WORKS</li>
+                    <li class="portfolio"><a href="#portfolio"></a>PORTFOLIO</li>
+                    <li class="contact"><a href="#contact"></a>CONTACT</li>
                 </ul>
             </aside>
         </div>
@@ -29,36 +43,50 @@
 
         <div class="about-text-box">
             <div class="title"><h1>ABOUT ME</h1></div>
-            <div class="text-wrapper">
-                <div><img src="" alt="profile-image"></div>
-                <div class="text">
-                    <h3>油井 真理子<br><i>Mariko Aburai</i></h3>
-                    <p>東京都出身。高校まで地元で育つ。<br>どうしても20代前半迄に海外生活がしたくて、家族の反対を押し切りアメリカはフロリダ州の大学へ編入。経済学を専攻し卒業。<br>ニューヨーク市に移動し、旅行会社で仕事をするうち、建築・ガーデニング・インテリアデザインに惹かれる。帰国後、不動産会社で総務人事経理をしながら設計を学ぶが、転職活動するに際してIT業界に開眼。IT技術者を志すようになる。</p>
-                </div>
-                <div class="text">
-                    <h3>history</h3>
-                    <p>転職したIT業界ではSIerエンジニアとして、常駐先のTechサービス導入や本社の技術者とのコミュニケーション業務を担当。仕事を通じながら自分の市場価値を高められる技術を身につけたく、Webエンジニアへの転向を考えるようになり、仕事を辞め18’10月よりWeb開発を学び現在に至る。</p>
-                </div>
-                <div class="text">
-                    <h3>hobby</h3>
-                    <ul>
-                        <li>筋トレ<i>大学の授業でウェイトトレーニング(2単位)を取ったのがきっかけ。大学時代はジムと図書館の往復で終わる。18'10月から再開。お気に入り種目はリバースクランチ、サイドレイズ、ブルガリアンスクワット</i></li>
-                        <li>サンバ<i>歴1年。東京浅草ベース：G.R.E.S Liberdade所属。※沖縄のサンバエスコーラも探しています。</i></li>
-                        <li>料理<i>好きな食べ物はアボカド、アスパラ、ナス、オレンジ。</i></li>
-                    </ul>
+            <div class="">
+                <div class=prf-image-container><img src="" alt="profile-image"></div>
+                <div class="">
+                    <div class="">
+                        <div class="text">
+                            <h3 class="sb-title">油井 真理子<br><i>Mariko Aburai</i></h3>
+                            <p>東京都出身。高校まで地元で育つ。<br>どうしても20代前半迄に海外生活がしたくて、家族の反対を押し切りアメリカはフロリダ州の大学へ編入。経済学を専攻し卒業。<br>ニューヨーク市に移動し、旅行会社で仕事をするうち、建築・ガーデニング・インテリアデザインに惹かれる。帰国後、不動産会社で総務人事経理をしながら設計を学ぶが、転職活動するに際してIT業界に開眼。IT技術者を志すようになる。</p>
+                        </div>
+                        <div class="text">
+                            <h3 class="sb-title">history</h3>
+                            <p>転職したIT業界ではSIerエンジニアとして、常駐先のTechサービス導入や本社の技術者とのコミュニケーション業務を担当。仕事を通じながら自分の市場価値を高められる技術を身につけたく、Webエンジニアへの転向を考えるようになり、仕事を辞め18’10月よりWeb開発を学び現在に至る。</p>
+                        </div>
+                        <div class="text">
+                            <h3 class="sb-title">hobby</h3>
+                            <ul>
+                                <li>筋トレ<i>大学の授業でウェイトトレーニング(2単位)を取ったのがきっかけ。大学時代はジムと図書館の往復で終わる。18'10月から再開。お気に入り種目はリバースクランチ、サイドレイズ、ブルガリアンスクワット</i></li>
+                                <li>サンバ<i>歴1年。東京浅草ベース：G.R.E.S Liberdade所属。※沖縄のサンバエスコーラも探しています。</i></li>
+                                <li>料理<i>好きな食べ物はアボカド、アスパラ、ナス、オレンジ。</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <!-- <div class="swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
         </div>
 
 
         <div class="skills">
+            <div class="title"><h1>Skills</h1></div>
             <ul class="lng-list">
-                <li><div class="title">HTML</div><i class="fab fa-html5"></i></li>
-                <li><div class="title">CSS</div><i class="fab fa-css3-alt"></i></li>
-                <li><div class="title">JavaScript</div><i class="fab fa-js"></i></li>
-                <li><div class="title">Sass</div><i class="fab fa-sass"></i></li>
-                <li><div class="title">Wordpress</div><i class="fab fa-wordpress"></i></li>
-                <li><div class="title">PHP</div><i class="fab fa-php"></i></li>
+                <li><div class="la-name">HTML</div><i class="fab fa-html5"></i></li>
+                <li><div class="la-name">CSS</div><i class="fab fa-css3-alt"></i></li>
+                <li><div class="la-name">JavaScript</div><i class="fab fa-js"></i></li>
+                <li><div class="la-name">Sass</div><i class="fab fa-sass"></i></li>
+                <li><div class="la-name">Wordpress</div><i class="fab fa-wordpress"></i></li>
+                <li><div class="la-name">PHP</div><i class="fab fa-php"></i></li>
             </ul>
         </div>
 
@@ -88,12 +116,13 @@
                 <li><i class="fas fa-mail-bulk"></i></li>
             </ul>
         </div>
-    <footer>&copy;MarikoAburai</footer>
+
+    <footer><p>&copy;MarikoAburai</p></footer>
 
 
 
-    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
