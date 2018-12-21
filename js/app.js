@@ -69,7 +69,6 @@ window.addEventListener('scroll', scrollAnimationFunc);
 
 
 
-
 // $(function() {
 //   $(window).scroll(function() {
 //     console.log('タイトルの背景を変える');
@@ -86,24 +85,26 @@ window.addEventListener('scroll', scrollAnimationFunc);
 
 $(function () {
   $('div.line').each(function () {
-    var $win = $(window),
-        $winH = $win.height(),
-        $connect = $(this),
-        position = $connect.offset().top,
+    let win = $(window),
+        winH = win.height(), 
+        connect = $(this),
+        position = connect.offset().top,
         current = 0,
         scroll;
-    $win.on('load scroll', function () {
-      scroll = $win.scrollTop();
-      current = (1 - (position - scroll) / $winH) * 2 * 100;
+    win.on('load scroll', function () {
+      scroll = win.scrollTop();
+      current = (1 - (position - scroll) / winH) * 2 * 100;
       if (current > 99.9) {
         current = 100;
       }
-      if (scroll > position - $winH) {
-        $connect.css({width: current + '%'});
+      if (scroll > position - winH) {
+        connect.css({width: current + '%'});
       }
     });
   });
 });
+
+
 
 // $(function() {
 //   $('div.line').each(function(){
@@ -126,3 +127,35 @@ $(function () {
 //     });
 //   });
 // });
+
+
+
+$(function() {
+  $(window).scroll(function() {
+    $('#pos').text($(window).scrollTop());
+    if ($(window).scrollTop() > 420) {
+      $()
+    }
+
+
+  });
+});
+
+
+// // ドロワーメニューの開閉
+// $('.js-hamburger').on('click', function() {
+//   let isActive = $(this).hasClass('on');
+//   toggleDrower(isActive);
+// });
+
+
+// function toggleDrower(isActive) {
+//   if(isActive){
+//     $('#drower-bg').fadeOut(600);
+//   } else {
+//     $('#drower-bg').fadeIn(600);
+//   }
+//   $('.js-hamburger').toggleClass('on');
+//   $('.js-drower').toggleClass('on');
+// }
+
