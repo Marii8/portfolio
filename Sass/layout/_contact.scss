@@ -1,0 +1,36 @@
+.contact-media {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    li {
+        margin-right: 15px;
+        opacity: .7;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    li:last-child{
+        margin-right: 0;
+    }
+}
+
+
+.fa-facebook-f {
+    color: #315096;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-linkedin {
+    color: #0079ba;
+}
+
+.fa-instagram {
+    color: #f77737;
+}

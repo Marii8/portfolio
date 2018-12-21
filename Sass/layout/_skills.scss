@@ -1,0 +1,96 @@
+.lng-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: {
+            image: url(./img/skills-bg3.jpg);
+            repeat: repeat;
+            attachment: fixed;
+            position-x: 30%;
+        };
+
+
+    li {
+        width: 100px;
+        padding: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(#333, .2);
+        border-radius: 5px;
+        .la-name {
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 15px 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+
+    .lng-english {
+        position: absolute;
+            top: 200px;
+            left: 200px;
+        font-family: 'Lily Script One', cursive;
+        font-size: 65px;
+        color: #00608d;
+        text-shadow: 5px 4px 5px rgba(#222, .4);
+    }
+
+    .lng-japanese{
+        position: absolute;
+            bottom: 200px;
+            right: 200px;
+        font-family: 'Sawarabi Mincho', sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+        color: #111;
+    }
+
+    .lng-dance {
+        position: absolute;
+            left: 355px;
+            bottom: 255px;
+        font-size: 65px;
+        font-family: 'Acme', sans-serif;
+        font-weight: bold;
+        color: #00a968;
+        // background: -webkit-linear-gradient(0deg, #00a968, #ffdc00);
+        background: url(./img/brazil-flag.png);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+
+
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #e34c26;
+}
+
+.fa-wordpress {
+    color: #21759b;
+}
+.fa-js {
+    color: #f7df1e;
+}
+.fa-php {
+    color: #4f5b93
+}
+
+.fa-sass {
+    color: #C04E88FF;
+}
+
